@@ -1,0 +1,18 @@
+body {
+  font-family: system-ui, sans-serif;
+  max-width: 48rem;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  color: #1f2937;
+}
+
+table { width: 100%; border-collapse: collapse; margin-top: 1rem; }
+th, td { text-align: left; padding: 0.5rem; border-bottom: 1px solid #e5e7eb; }
+
+form { display: grid; gap: 0.75rem; max-width: 24rem; }
+label { display: grid; gap: 0.25rem; font-size: 0.9rem; }
+input { padding: 0.4rem; border: 1px solid #9ca3af; border-radius: 4px; }
+button { padding: 0.4rem 0.8rem; cursor: pointer; }
+
+.field-error { color: #b91c1c; font-size: 0.85rem; }
+.form-error { color: #b91c1c; }
