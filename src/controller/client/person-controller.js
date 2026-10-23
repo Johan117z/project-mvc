@@ -1,15 +1,8 @@
 import AppError from "@/assets/library/app-error";
+import parseId from "@/assets/library/parse-id";
 import PersonModel from "@/model/client/person-model";
 
 const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-function parseId(id) {
-  const parsed = Number(id);
-  if (!Number.isInteger(parsed) || parsed < 1) {
-    throw new AppError(400, "Invalid id");
-  }
-  return parsed;
-}
 
 // Returns the clean data, or throws 400 listing every invalid field.
 function validate(data) {
